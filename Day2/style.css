@@ -1,0 +1,15 @@
+h1
+{
+  Color: lime;
+  font-size: 5em;
+  font-family: monospace;
+}
+a
+{
+  text-decoration: none;
+  font-weight: bolder;
+}
+ul
+{
+  list-style-type: armenian;
+}
