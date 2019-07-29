@@ -33,3 +33,16 @@ console.log (i(2,3))
 console.log (i(7,5))
 console.log (i(3,9))
 
+function l(a,b,c){
+    var d = b**2 - 4 * a * c;
+    if (d >= 0) {
+        var srd = Math.sqrt(d);
+        return (-1 * b + srd)/(2 * a);
+    }
+    else {
+        return NaN;
+    }
+} 
+console.log ("\n")
+console.log (i(1,4,4))
+console.log (i(1,1,-1))
