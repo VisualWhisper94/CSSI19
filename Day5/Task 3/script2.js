@@ -24,3 +24,12 @@ console.log ("\n")
 console.log (i(2,3))
 console.log (i(7,5))
 console.log (i(3,9))
+
+function k(r) {
+    return 2* Math.PI * r;
+}
+console.log ("\n")
+console.log (i(2,3))
+console.log (i(7,5))
+console.log (i(3,9))
+
