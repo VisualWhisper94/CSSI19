@@ -1,4 +1,4 @@
-def CharacterCount(word):
+def CharacterCount():
     word = raw_input ("Enther a Word:")
     d = {}
 for i in word:
