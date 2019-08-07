@@ -3,7 +3,10 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
+- url: /css
+  static_dir: css_files
+
+- url: /.* #Cathches everything (/.*)
   script: main.app
 
 libraries:

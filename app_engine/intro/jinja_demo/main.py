@@ -37,8 +37,14 @@ class ResultPage(webapp2.RequestHandler):
     def get(self):
         FBI = the_jinja_env.get_template('templates/results.html')
         self.response.write(FBI.render({"Action":"Open up"}))
+class Favpage(webapp2.RequestHandler):
+    def get(self):
+        t = the_jinja_env.get_template('templates/fav.html')
+        faves = {"title":"My Favorite Websites","item1":"Google", "item2":"Youtube","item3":"twitter","item4":"Facebook"}
+        self.response.write(t.render(faves)) #Useed dic as an argument *()
 routes = [('/', MainPage),
 ('/about', AboutPage),
 ('/news', NewsPage),
-('/result', ResultPage)]
+('/result', ResultPage),
+('/fav', Favpage)]
 app = webapp2.WSGIApplication(routes ,debug=True)
